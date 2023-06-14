@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact JCC</title>
+
+    <link rel="stylesheet" href="./contactUs_style.css">
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <header>
+        <a href="./home.html"><img class="logo" src="./ASSETS/Logo JCC Navbar.png" alt="logo" /></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./event.html">Event</a></li>
+                <li><a href="./price.html">Price</a></li>
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a class="active" href="./contactUs.html">Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger-menu">
+                <span class="bar-hamburger"></span>
+                <span class="bar-hamburger"></span>
+                <span class="bar-hamburger"></span>
+              </div>
+        </nav>
+    </header>
+
+    <!-- Banner Title section -->
+    <section>
+        <div class="contactUs-section">
+            <img src="./ASSETS/CONTACT US/contactBanner.png" alt="contactUs Us Photo" />
+            <div class="contactUs-text">
+                <h2>Contact JCC</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- JCC Contact Detail section -->
+    <section>
+        <div class="contact-detail">
+            <h2>Jockey's Conference Center</h2>
+            <iframe src="https://www.google.com/maps/d/embed?mid=146A4Ka7UXlesDG0HBG9cFB6f50g&hl=en_US&ehbc=2E312F"
+                class="maps"></iframe>
+
+            <div class="contact-information">
+                <div class="info-detail">
+                    <div class="info-logo">
+                        <img src="./ASSETS/SVG ICONS/mdi_location.svg" alt="">
+                    </div>
+                    <div class="info-desc">
+                        <p class="location-desc">
+                            Jockey's Conference Center (JCC)
+                            Jl. Jendral Gatot Subroto No.1,
+                            Jakarta Pusat, 10270
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-detail">
+                    <div class="info-logo">
+                        <img src="./ASSETS/SVG ICONS/ic_baseline-email.svg" alt="">
+                    </div>
+                    <div class="info-desc">
+                        <p class="email-desc">
+                            info@jcc.co.id
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-detail">
+                    <div class="info-logo">
+                        <img src="./ASSETS/SVG ICONS/ic_baseline-phone.svg" alt="">
+                    </div>
+                    <div class="info-desc">
+                        <p class="phone-desc">
+                            021 - 1234 - 5678
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-detail">
+                    <div class="info-logo">
+                        <img src="./ASSETS/SVG ICONS/mdi_clock.svg" alt="">
+                    </div>
+                    <div class="info-desc">
+                        <p class="hour-desc">
+                            Mon - Fri: 9am - 6pm
+                        </p>
+                        <p class="hour-desc">
+                            Sat - Sun: Closed
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section>
+        <div class="form-section">
+            <h2>Get in Touch with Us</h2>
+            <p>
+                *Required Information
+            </p>
+            <div class="form-border">
+                <form onsubmit="return validationForm();">
+                    <div class="form-input">
+                        <input list="subjects" name="subject" id="subject" required="">
+                        <label>Subject*</label>
+
+                        <datalist id="subjects">
+                            <option value="Event Planning">
+                            <option value="Information">
+                            <option value="Media Request">
+                            <option value="Others">
+                        </datalist>
+                    </div>
+
+                    <div class="half-form">
+                        <div class="form-input-half">
+                            <div class="form-input">
+                                <input type="text" name="" required="" id="firstName">
+                                <label>First Name*</label>
+                            </div>
+                        </div>
+
+                        <div class="form-input-half">
+                            <div class="form-input">
+                                <input type="text" name="" required="" id="lastName">
+                                <label>Last Name*</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="half-form">
+                        <div class="form-input-half">
+                            <div class="form-input">
+                                <input type="email" name="" required="" id="email">
+                                <label>Email*</label>
+                            </div>
+                        </div>
+
+                        <div class="form-input-half">
+                            <div class="form-input">
+                                <input type="number" name="" required="" id="phoneNumber">
+                                <label>Phone Number*</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <textarea placeholder="Message" required="" id="messageBox"></textarea>
+
+                    <div class="check-input">
+                        <label for="contact-method">Preferred Contact Method*</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="phoneMethod" name="contact-method" value="phone">
+                                <label for="phone">Phone</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="emailMethod" name="contact-method" value="email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="send-button" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="logo-container">
+                <a href="./home.html"><img src="./ASSETS/Footer/Logo JCC Footer.png" alt="JCC Logo" /></a>
+            </div>
+            <div class="info-container">
+                <div class="info-heading">
+                    <h4>Information</h4>
+                </div>
+                <ul class="info-list">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                </ul>
+            </div>
+            <div class="social-container">
+                <div class="social-heading">
+                    <h4>Social Media</h4>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="./ASSETS/Footer/FACEBOOK.svg" alt="Facebook" /></a>
+                    <a href="#"><img src="./ASSETS/Footer/Twitter - Negative.svg" alt="Twitter" /></a>
+                    <a href="#"><img src="./ASSETS/Footer/Instagram - Negative.svg" alt="Instagram" /></a>
+                    <a href="#"><img src="./ASSETS/Footer/YouTube - Negative.svg" alt="Youtube" /></a>
+                </div>
+            </div>
+            <div class="newsletter-container">
+                <div class="newsletter-heading">
+                    <h4>Newsletter</h4>
+                </div>
+                <p>Be the first to receive the latest updates, special offers, and upcoming events from us.</p>
+                <form class="newsletter-form" action="#" method="post" onsubmit="submitForm(event)">
+                    <input type="email" name="email" placeholder="youremail@mail.com" required />
+                    <button type="submit"><img src="./ASSETS/SVG ICONS/arrow-send.svg" alt="Submit" /></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© JOCKEY'S CONFERENCE CENTER, 2023 • ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+    <script src="./contactUs-script.js"></script>
+</body>
+
+</html>

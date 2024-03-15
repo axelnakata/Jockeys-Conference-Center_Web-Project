@@ -25,7 +25,7 @@ The initial design of the website was created using Figma. You can view the high
 - JavaScript
 - Figma (for prototyping)
 
-## Screenshots
+## Screenshots 🖼️
 ![Homepage](./JCC%20Design/Home.png)
 ![Event](./JCC%20Design/Event.png)
 ![PriceList](./JCC%20Design/Price%20List.png)
